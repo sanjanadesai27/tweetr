@@ -21,7 +21,9 @@ section.new-tweet {
 .new-tweet h2 {
   border-bottom: 1px solid;
   border-bottom-color: black;
-
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .invalid {

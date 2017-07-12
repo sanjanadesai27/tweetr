@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
   height: 100%;
 }
@@ -15,7 +15,7 @@ html {
  * Global layout stuff
  */
 
-body {
+ body {
 
   margin: 0;
   height: 100%;
@@ -36,12 +36,69 @@ body {
 
 }
 
-#tweet header {
+.tweet {
+  height: 200px;
+  border: 1px;
+  border-radius: 5px;
+  border-color: #eee;
+  border-style: solid;
+  margin: 10px 0;
+  position: relative;
+}
+
+.tweet header {
+
+  position: relative;
+  height: 70px;
   background: #eee;
+  padding: 10px;
+
+}
+
+.tweet header img{
+  border-radius: 5px;
+  height: 50px;
+  background: red;
+}
+
+.tweet header h3{
+
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+  color: rgba(2, 90, 80, 0.7);
+  font-size: 2em;
+}
+
+.tweet header span {
+
+  color: lightgrey;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.tweet .content {
+
+  color: #025a50;
+  padding: 15px;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
 
 
 }
 
+.tweet footer {
+
+  color: #025a50;
+  border-top: #eee solid 1px;
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  width: 100%;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
