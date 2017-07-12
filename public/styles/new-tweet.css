@@ -24,6 +24,9 @@ section.new-tweet {
 
 }
 
+.invalid {
+  color: red;
+ }
 
 
 

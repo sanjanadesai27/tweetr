@@ -5,9 +5,9 @@ $(document).ready(function(){
     var counter = $(this).siblings('.counter');
     counter.html(remChars);
     if (remChars < 0) {
-      counter.css('color','red');
+      counter.addClass("invalid");
     } else if(remChars > 0) {
-      counter.css('color','');
+      counter.removeClass("invalid");
     }
   });
 });
