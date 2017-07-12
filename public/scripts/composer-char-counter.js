@@ -1,11 +1,13 @@
 $(document).ready(function(){
+
   $("textarea").on("keyup", function(){
-    var counter = 140 - $(this).val().length;
-    $(this).siblings('span').html(counter);
-    if (counter < 0) {
-      $(this).siblings('.counter').css('color','red');
-    } else if(counter > 0) {
-      $(this).siblings('.counter').css('color','');
+    var remChars = 140 - $(this).val().length;
+    var counter = $(this).siblings('.counter');
+    counter.html(remChars);
+    if (remChars < 0) {
+      counter.css('color','red');
+    } else if(remChars > 0) {
+      counter.css('color','');
     }
   });
 });
