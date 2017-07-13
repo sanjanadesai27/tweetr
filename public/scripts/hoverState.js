@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('article').hover(
+  $('#tweetList').hover(
     function() {
       $(this).addClass('hoverState');
     },
