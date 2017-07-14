@@ -37,6 +37,8 @@ $(document).ready(function(){
       $('#composedTweet').submit(function(event){
         event.preventDefault();
         var formInput = $(this).serialize();
+        formInput = $("<div>").text(formInput).html();
+        console.log(formInput);
         var flag = false;
 
         if(!formInput){
