@@ -102,21 +102,56 @@
   width: 100%;
 }
 
-.hoverState header h3 {
+.tweet footer .fa-flag {
+
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: white;
+
+}
+
+.tweet footer .fa-retweet {
+
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  color: white;
+
+}
+
+.tweet footer .fa-heart {
+
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  color: white;
+
+}
+
+
+#tweetList .tweet:hover header h3 {
   color: #025a50;
 }
 
-.hoverState header img {
+#tweetList .tweet:hover header img {
   opacity: 1;
- }
+}
 
-.hoverState header span {
+#tweetList .tweet:hover header span {
   color: grey;
 }
 
-.hoverState footer {
-/* add images */
+#tweetList .tweet:hover footer .fa {
+  color: #025a50;
+
 }
+
+#tweetList .tweet:hover {
+  border: 1px solid lightgray;
+ }
+
+
 
 
 /*

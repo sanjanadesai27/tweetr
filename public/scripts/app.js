@@ -61,6 +61,9 @@ $(document).ready(function(){
       <div class="content"> ${tweet.content.text} </div>
       <footer>
       <span>${tweet.created_at}</span>
+      <i class="fa fa-flag" aria-hidden="true"></i>
+      <i class="fa fa-retweet" aria-hidden="true"></i>
+      <i class="fa fa-heart" aria-hidden="true"></i>
       </footer>
       </article> `
       return html;
@@ -69,9 +72,7 @@ $(document).ready(function(){
     function renderTweets(data) {
       let allTweets = "";
       data.forEach(function(tweet){
-        console.log(tweet);
         var $tweet = createTweetElement(tweet);
-        console.log($tweet);
         allTweets = $tweet + allTweets;
       }
       );
@@ -82,7 +83,6 @@ $(document).ready(function(){
       $('#composedTweet').submit(function(event){
         event.preventDefault();
         var formInput = $(this).serialize();
-        console.log(formInput);
         var flag = false;
 
         if(!formInput){
@@ -92,17 +92,12 @@ $(document).ready(function(){
           alert("Your tweet is too long!");
           flag = true
         }
-        else{
-          alert('Great!');
-        }
-
         if(!flag){
           $.ajax({
             method: "POST",
             url: "/tweets",
             data: formInput
         }).done(() => {
-          console.log(data);
           loadTweets();
         });
       }
