@@ -18,7 +18,7 @@ Tweeter is a simple, single-page Twitter clone. It allows users to share their t
 - md5
 - MongoDB
 
-##Screenshots
+## Screenshots
 
 ![Screenshot of the homepage](https://github.com/sanjanadesai27/tweetr/blob/master/docs/page_on_open.png)
 ![Screenshot of page with open composer](https://github.com/sanjanadesai27/tweetr/blob/master/docs/Compose_Tweet.png)
