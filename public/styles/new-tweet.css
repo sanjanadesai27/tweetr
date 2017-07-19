@@ -1,33 +1,40 @@
 
 section.new-tweet {
+
   background: #eee;
   border-radius: 5px;
+  color: #025a50;
   margin: 0 auto;
   padding: 10px;
-  color: #025a50;
 
 }
 
 .new-tweet .counter {
+
   float: right;
 
 }
 
 .new-tweet textarea {
+
   padding: 5px;
   width: 100%;
 
 }
 .new-tweet h2 {
+
   border-bottom: 1px solid;
   border-bottom-color: black;
   font-size: 2em;
   margin-bottom: 10px;
   margin-top: 0;
+
 }
 
 .invalid {
+
   color: red;
+
  }
 
 

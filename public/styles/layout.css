@@ -1,9 +1,9 @@
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
- html {
+* http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+* https://css-tricks.com/international-box-sizing-awareness-day/
+* Do not modify these two selectors, please
+*/
+html {
   box-sizing: border-box;
   height: 100%;
 }
@@ -11,21 +11,17 @@
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
- body {
-
-  margin: 0;
-  height: 100%;
+body {
+  
   background-color: #eee;
   font-family: 'Roboto Condensed', sans-serif;
-
+  height: 100%;
+  margin: 0;
+  
 }
 
 .container {
-
+  
   background: white;
   margin: 0 auto;
   min-height: 100%;
@@ -33,100 +29,105 @@
   padding-right: 2em;
   padding-top: 140px;
   width: 450px;
-
+  
 }
 
 .tweet {
-  height: 200px;
+  
   border: 1px;
   border-radius: 5px;
   border-color: #eee;
   border-style: solid;
+  height: 200px;
   margin: 10px 0;
   position: relative;
+  
 }
 
 .tweet header {
-
-  position: relative;
-  height: 70px;
+  
   background: #eee;
+  height: 70px;
   padding: 10px;
-
+  position: relative;
+  
 }
 
-.tweet header img{
-
+.tweet header img {
+  
   background: red;
   border-radius: 5px;
   height: 50px;
   opacity: 0.75;
+  
 }
 
 .tweet header h3{
-
+  
+  color: rgba(2, 90, 80, 0.7);
+  font-size: 1.5em;
+  left: 70px;
   margin: 0;
   position: absolute;
   top: 10px;
-  left: 70px;
-  color: rgba(2, 90, 80, 0.7);
-  font-size: 1.5em;
+  
 }
 
 .tweet header span {
-
+  
   color: lightgrey;
   position: absolute;
-  top: 20px;
   right: 10px;
+  top: 20px;
+  
 }
 
 .tweet .content {
-
+  
   color: #025a50;
   padding: 15px;
   position: absolute;
   top: 55%;
   transform: translateY(-50%);
-
-
+  
 }
 
 .tweet footer {
-
-  color: #025a50;
+  
   border-top: #eee solid 1px;
-  position: absolute;
   bottom: 0px;
+  color: #025a50;
   padding: 10px;
+  position: absolute;
   width: 100%;
+  
 }
 
 .tweet footer .fa-flag {
-
-  position: absolute;
+  
   bottom: 10px;
-  right: 15px;
   color: white;
-
+  position: absolute;
+  right: 15px;
+  
 }
 
 .tweet footer .fa-retweet {
-
-  position: absolute;
+  
   bottom: 10px;
-  right: 40px;
   color: white;
-
+  position: absolute;
+  right: 40px;
+  
 }
 
 .tweet footer .fa-heart {
-
-  position: absolute;
+  
   bottom: 10px;
-  right: 70px;
   color: white;
-
+  position: absolute;
+  right: 70px;
+  
 }
 
 
@@ -144,16 +145,12 @@
 
 #tweetList .tweet:hover footer .fa {
   color: #025a50;
-
+  
 }
 
 #tweetList .tweet:hover {
   border: 1px solid lightgray;
- }
+}
 
 
 
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
